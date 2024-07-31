@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>form validation in javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>Registration Form</h2>
+      </div>
+      <form action="" id="myForm">
+        <div class="flex">
+          <div class="fname">
+            <input type="text" id="fname" placeholder="First Name" required />
+            <div class="errors" id="fnameError">
+            </div>
+          </div>
+          <div class="lname">
+            <input type="text" id="lname" placeholder="Last Name" required />
+            <div class="errors" id="lnameError">
+            </div>
+          </div>
+        </div>
+        <div class="email">
+          <input type="email" id="email" placeholder="Email" required />
+          <div class="errors" id="emailError">
+           
+          </div>
+        </div>
+        <div class="phone">
+          <input type="tel" id="phone" placeholder="Phone" maxlength="10" required />
+          <div class="errors" id="phoneError">
+            
+          </div>
+        </div>
+        <div class="password">
+          <input type="password" id="password" placeholder="Password" required />
+          <div class="errors" id="passError">
+            
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit" id="submit">submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
